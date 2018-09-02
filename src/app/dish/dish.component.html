@@ -1,0 +1,27 @@
+<div class="col-md-6">
+<h2> Dish Details</h2>
+
+<table class="table table-striped">
+  <thead>
+  <tr>
+    <th class="hidden">Id</th>
+    <th>Name</th>
+    <th>Description</th>
+    <th>Price</th>
+    <th>Active</th>
+    <th>CategoryId</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr *ngFor="let dish of dishes">
+    <td class="hidden">{{dish.id}}</td>
+    <td>{{dish.name}}</td>
+    <td>{{dish.description}}</td>
+    <td>{{dish.price}}</td>
+    <td>{{dish.isActive}}</td>
+    <td>{{dish.categoryId}}</td>
+    <td><button class="btn btn-danger" (click)="deleteDish(dish)"> Delete Dish</button></td>
+  </tr>
+  </tbody>
+</table>
+</div>

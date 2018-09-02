@@ -1,0 +1,37 @@
+<div class="container">
+	<div class="col-md-12">
+		<div class="form-group select-category">
+		    <label for="categoryId">Select a Category:</label><br>
+		  	<select2 name="select2_value" [data]="categories" [width]="200" [cssImport]=true (valueChanged)="changed($event)"></select2>
+		  	<button type="button" class="btn btn-success btn-sm new-category-btn" data-toggle="modal" (click)="addNewCategory()"><b>+New Category</b></button>
+	  	</div>
+		<div class="form-group">
+			<h4 class="list-dish-title">List Dishes</h4>
+			<button type="button" class="btn btn-success btn-sm new-dish-btn" data-toggle="modal" (click)="addNewDish()"><b>+New Dish</b></button>
+		</div>
+		<table class="table table-striped">
+		  <thead>
+		  <tr>
+		    <th class="hidden">Id</th>
+		    <th>Dish Name</th>
+		    <th>Description</th>
+		    <th>Dish Price</th>
+		    <th>Actions</th>
+		  </tr>
+		  </thead>
+		  <tbody>
+		  <tr *ngFor="let dish of category.dishes">
+		    <td class="hidden">{{dish.id}}</td>
+		    <td>{{dish.name}}</td>
+		    <td>{{dish.description}}</td>
+		    <td>{{dish.price}}</td>
+		    <td class="colAction">
+		    	<button class="btn btn-info btn-sm" (click)="editDish(dish)">Update</button>
+		    	<button class="btn btn-danger btn-sm" (click)="deleteDish(dish)" style="margin-left:20px;">Delete</button>
+		    </td>
+		  </tr>
+		  </tbody>
+		</table>
+	</div>
+ 
+</div>

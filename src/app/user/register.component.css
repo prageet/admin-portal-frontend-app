@@ -1,0 +1,18 @@
+h3 {
+	color: white;
+	text-align: center;
+}
+
+label {
+	color: white;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.register-container {
+	background: cadetblue;
+	border-radius: 10px;
+	padding-bottom: 20px;
+	margin-left: 400px;
+	margin-top: 20px;
+}

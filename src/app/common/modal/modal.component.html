@@ -1,0 +1,128 @@
+ <div class="modal-header">
+   <h4 class="modal-title pull-left">{{title}}</h4>
+   <button type="button" class="close pull-right" aria-label="Close" (click)="bsModalRef.hide()">
+     <span aria-hidden="true">&times;</span>
+   </button>
+ </div>
+ <div class="modal-body">
+   <div class="container" style="padding-left: 0">
+	 <div class="col-md-6" *ngIf="showUpdateOrderModal">
+		<form style="padding-top:10px;padding-bottom: 20px;">
+		  <div class="form-group">
+		    <label for="orderId">Order Id:</label>
+		    <input type="text" [(ngModel)]="order.id" placeholder="Order Id" name="orderId" class="form-control" disabled>
+		  </div>
+		  <div class="form-group">
+		    <label for="quantity">Quantity:</label>
+		    <input type="text" [(ngModel)]="order.quantity" placeholder="Quantity" name="quantity" class="form-control" id="quantity"  disabled>
+		  </div>
+		
+		  <div class="form-group">
+		    <label for="userId">UserId:</label>
+		    <input [(ngModel)]="order.userId" placeholder="User Id" name="userId" class="form-control"  disabled>
+		  </div>
+		
+		  <div class="form-group">
+		    <label for="isActive">Order Status:</label>
+		    <input [(ngModel)]="order.status" placeholder="Status" name="status" class="form-control" >
+		  </div>
+		  <div class="form-group">
+		    <label for="totalPrice">Amount:</label>
+		    <input [(ngModel)]="order.totalPrice" placeholder="totalPrice" name="totalPrice" class="form-control"  disabled>
+		  </div>
+		  <button class="btn btn-success btn-sm" (click)="onConfirm()">Update Order</button>
+		  <button type="button" class="btn btn-danger btn-sm" (click)="onConfirm()" style="margin-left: 20px">Cancel</button>
+		</form>
+	</div>
+
+
+   	<div class="col-md-6" *ngIf="showViewOrderModal">
+    	<table class="table table-striped">
+		  <thead style="background: grey; color: white">
+			  <tr style="border: 1px solid black;">
+			    <th class="hidden">Id</th>
+			    <th>Order Id</th>
+			    <th>Dish Name</th>
+			    <th>Quantity</th>
+			    <th>Price</th>
+			  </tr>
+		  </thead>
+		  <tbody>
+		  <tr style="border: 1px solid black;" *ngFor="let ordDetail of order.orderDetails">
+		    <td class="hidden">{{ordDetail.id}}</td>
+		    <td>{{ordDetail.orderId}}</td>
+		    <td>{{ordDetail.dishName}}</td>
+		    <td>{{ordDetail.quantity}}</td>
+		    <td>{{ordDetail.price}}</td>
+		  </tr>
+		  </tbody>
+		</table>
+	</div>
+   </div>
+   
+   <div class="container" style="padding-left: 0">
+	   <div class="col-md-6"  *ngIf="showAddCategoryModal">
+			<form>
+			  <div class="form-group">
+			    <label for="name">Name:</label>
+			    <input type="text" [(ngModel)]="category.name" placeholder="Name" name="name" class="form-control" id="name">
+			  </div>
+			  <div class="form-group">
+			    <label for="description">Description:</label>
+			    <input type="text" [(ngModel)]="category.description" placeholder="Description" name="description" class="form-control" id="description">
+			  </div>
+			
+			  <div class="form-group">
+			    <label for="imagePath">Image Path:</label>
+			    <input [(ngModel)]="category.imagePath" placeholder="Image Path" name="imagePath" class="form-control" id="imagePath">
+			  </div>
+			
+			  <div class="form-group">
+			    <label for="isActive">Active:</label>
+			    <input [(ngModel)]="category.isActive" placeholder="Active" name="isActive" class="form-control" id="isActive">
+			  </div>
+			  <!-- <div class="form-group">
+			    <label for="lastModifiedDate">lastModifiedDate:</label>
+			    <input [(ngModel)]="category.lastModifiedDate" placeholder="lastModifiedDate" name="lastModifiedDate" class="form-control" id="lastModifiedDate">
+			  </div> -->
+			  <button class="btn btn-success" (click)="onCategoryConfirm()">Create</button>
+			</form>
+		</div>
+	</div>
+	
+	<div class="container" style="padding-left: 0" *ngIf="showAddDishModal">
+		<div class="col-md-6">
+			<form>
+			  <div class="form-group">
+			    <label for="name">Name:</label>
+			    <input type="text" [(ngModel)]="dish.name" placeholder="Name" name="name" class="form-control" id="name">
+			  </div>
+			  <div class="form-group">
+			    <label for="description">Description:</label>
+			    <input type="text" [(ngModel)]="dish.description" placeholder="Description" name="description" class="form-control" id="description">
+			  </div>
+			
+			  <div class="form-group">
+			    <label for="price">Price:</label>
+			    <input [(ngModel)]="dish.price" placeholder="Image Path" name="price" class="form-control" id="price">
+			  </div>
+			  
+			  <div class="form-group">
+			    <label for="categoryId">Category:</label><br>
+			  	<select2 name="select2_value" [data]="categories" [width]="200" [cssImport]=true (valueChanged)="changed($event)"></select2>
+			  </div>
+			  <div class="form-group">
+			    <label for="isActive">Active:</label>
+			    <input [(ngModel)]="dish.isActive" placeholder="Active" name="isActive" class="form-control" id="isActive">
+			  </div>
+			  <button class="btn btn-success" (click)="onDishConfirm()">Create</button>
+			</form>
+		</div>
+	</div>
+	
+ </div>
+ <div class="modal-footer" *ngIf="showViewOrderModal">
+        <button type="button" class="btn btn-secondary btn-sm" (click)="onConfirm()">Close</button>     
+ </div>
+    
+    

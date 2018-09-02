@@ -1,0 +1,296 @@
+.jumbotron {
+	height: 100vh;
+	margin-bottom: 0px;
+}
+
+
+/*---Custom fonts start from here-----*/
+
+* {
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	text-shadow: none;
+	transition: all 250ms ease 0s;
+	-webkit-transition: all 250ms ease 0s;
+	margin: 0;
+	padding: 0;
+	-webkit-appearance: none;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+nav,
+section,
+summary,
+div {
+	display: block;
+}
+
+ul {
+	list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+	margin: 0;
+}
+
+a,
+a:focus,
+a:hover {
+	text-decoration: none !important;
+	outline: none !important;
+}
+
+menu,
+ol,
+ul {
+	padding: 0;
+	margin: 0;
+}
+
+html {
+	margin: 0;
+	padding: 0;
+	-webkit-font-smoothing: antialiased;
+	height: 100%;
+	width: 100%;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	overflow-x: hidden;
+	font-family: 'OpenSans';
+	font-size: 14px;
+	height: 100%;
+	width: 100%;
+}
+
+nav {
+	background-color: #1bbc9b;
+	font-size: 16px;
+}
+
+nav a {
+	color: #fff;
+}
+
+.brand {
+	padding: 20px;
+	font-size: 26px;
+}
+
+.headerLinks {
+	display: flex;
+	float: left;
+	margin-left: 5%;
+}
+
+.headerLinks2 {
+	display: flex;
+	float: right;
+	padding: 20px;
+	color: #fff;
+}
+
+.headerLinks>li {
+	padding: 20px;
+}
+
+.headerLinks2>li:first-child {
+	border-right: solid #fff;
+	margin-right: 5%;
+	padding-right: 5px;
+}
+
+.headerLinks>li>ul>li {
+	font-size: 12px;
+}
+
+.active {
+	background-color: #138870;
+}
+
+.slidertext h1 {
+	font-size: 600%;
+	margin-bottom: 3%;
+}
+
+.slidertext p {
+	font-size: 220%;
+	margin-bottom: 3%
+}
+
+.slidertext button {
+	background-color: #1bbc9b;
+	color: #fff;
+	font-size: 135%;
+	padding-left: 20px;
+	padding-right: 20px;
+	margin-bottom: 20%;
+}
+
+.slidertext button:hover {
+	background-color: #000;
+	color: #fff;
+}
+
+.about {
+	padding: 3%;
+}
+
+.about p {
+	color: #828282;
+	text-align: justify;
+	padding: 2%;
+}
+
+.about h2 {
+	padding: 2%;
+}
+
+.about h4 {
+	padding: 2%;
+}
+
+.chart {
+	background-color: #1bbc9b;
+	color: #fff;
+	font-size: 65px;
+	text-align: center;
+	height: 100px;
+	margin-left: 25%;
+	width: 100px;
+	border-radius: 100%;
+	vertical-align: central;
+	margin-bottom: 5%;
+}
+
+.aboutData h5 {
+	text-align: center;
+	font-size: 16px;
+}
+
+.request {
+	margin-top: 10%;
+}
+
+.submitButton {
+	background-color: #FF0000;
+	color: #fff;
+	font-size: 18px;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+.submitButton:hover {
+	background-color: #000;
+	color: #fff;
+}
+
+.products {
+	background-image: url(../assets/food-bg-image_960_720.jpg); */
+	color: #fff;
+	padding: 3%;
+}
+
+.blackbox {
+	background-color: #DDDDDD;
+	margin-top: 6%;
+	padding: 2%;
+}
+
+.blackbox img {
+	width: 100%;
+}
+
+.blackbox>div>div {
+	padding-top: 5%;
+	text-align: left;
+}
+
+.blackbox>div>div p {
+	margin-top: 5%;
+	color: #000;
+}
+
+.blackbox>div>div>a {
+	color: #000;
+}
+
+.blackbox>div>div>a:hover {
+	color: #1bbc9b;
+}
+
+.products>div>a {
+	background-color: #1bbc9b;
+	color: #fff;
+	padding: 5px;
+	font-size: 16px;
+	margin-top: 3%;
+	padding-left: 3%;
+	padding-right: 3%;
+}
+
+footer {
+	background-color: #D4D4D4;
+	padding: 1%;
+	display: flex;
+}
+
+.copyright {
+	float: right;
+	line-height: 28px;
+}
+
+.footerLinks {
+	display: flex;
+	float: left;
+}
+
+.footerLinks {
+	display: flex;
+	float: left;
+}
+
+.footerLinks>li {
+	padding: 3px;
+	margin: 2px;
+}
+
+.footerLinks>li:hover {
+	text-decoration: underline;
+}
+
+.footerLinks>li>a {
+	color: #000;
+	border-right: solid 1px #000;
+	padding-right: 10px;
+	display: inline-block;
+	line-height: 12px;
+}
+
+.footerLinks>li>a:hover {
+	color: #000;
+}
+
+.regButtons {
+	display: flex;
+}
+
+.reset {
+	margin-left: 2%;
+}

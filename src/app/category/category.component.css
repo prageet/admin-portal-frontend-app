@@ -1,0 +1,38 @@
+th {
+	//width: 20%;
+	background-color: grey;
+	color: white;
+}
+
+td {
+	//width: 20%;
+}
+
+tr {
+	border: 1px solid black;
+}
+.colAction {
+	width: 200px;
+}
+.new-category-btn {
+	margin-left: 30px;
+}
+.form-group.select-category{
+	margin-bottom: 40px;
+}
+.list-dish-title {
+	float: left;
+	color: white;
+	font-weight: bold;
+}
+.new-dish-btn {
+	float: right;
+	margin-left: 30px;
+}
+.table-striped>tbody>tr:nth-of-type(even) {
+    background-color: aliceblue;
+}
+.select-category {
+	color: white;
+	font-size: 18px;
+}

@@ -1,0 +1,28 @@
+<div class="col-md-6">
+  	<h2 class="text-center">Add Dish</h2>
+	<form>
+	  <div class="form-group">
+	    <label for="name">Name:</label>
+	    <input type="text" [(ngModel)]="dish.name" placeholder="Name" name="name" class="form-control" id="name">
+	  </div>
+	  <div class="form-group">
+	    <label for="description">Description:</label>
+	    <input type="text" [(ngModel)]="dish.description" placeholder="Description" name="description" class="form-control" id="description">
+	  </div>
+	
+	  <div class="form-group">
+	    <label for="price">Price:</label>
+	    <input [(ngModel)]="dish.price" placeholder="Image Path" name="price" class="form-control" id="price">
+	  </div>
+	  
+	  <div class="form-group">
+	    <label for="categoryId">Category:</label><br>
+	  	<select2 name="select2_value" [data]="categories" [width]="200" [cssImport]=true (valueChanged)="changed($event)"></select2>
+	  </div>
+	  <div class="form-group">
+	    <label for="isActive">Active:</label>
+	    <input [(ngModel)]="dish.isActive" placeholder="Active" name="isActive" class="form-control" id="isActive">
+	  </div>
+	  <button class="btn btn-success" (click)="createDish()">Create</button>
+	</form>
+</div>

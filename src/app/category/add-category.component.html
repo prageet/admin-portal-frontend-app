@@ -1,0 +1,28 @@
+<div class="col-md-6">
+  <h2 class="text-center">Add Category</h2>
+<form>
+  <div class="form-group">
+    <label for="name">Name:</label>
+    <input type="text" [(ngModel)]="category.name" placeholder="Name" name="name" class="form-control" id="name">
+  </div>
+  <div class="form-group">
+    <label for="description">Description:</label>
+    <input type="text" [(ngModel)]="category.description" placeholder="Description" name="description" class="form-control" id="description">
+  </div>
+
+  <div class="form-group">
+    <label for="imagePath">Image Path:</label>
+    <input [(ngModel)]="category.imagePath" placeholder="Image Path" name="imagePath" class="form-control" id="imagePath">
+  </div>
+
+  <div class="form-group">
+    <label for="isActive">Active:</label>
+    <input [(ngModel)]="category.isActive" placeholder="Active" name="isActive" class="form-control" id="isActive">
+  </div>
+  <!-- <div class="form-group">
+    <label for="lastModifiedDate">lastModifiedDate:</label>
+    <input [(ngModel)]="category.lastModifiedDate" placeholder="lastModifiedDate" name="lastModifiedDate" class="form-control" id="lastModifiedDate">
+  </div> -->
+  <button class="btn btn-success" (click)="createCategory()">Create</button>
+</form>
+</div>

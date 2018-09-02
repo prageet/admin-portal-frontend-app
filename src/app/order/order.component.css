@@ -1,0 +1,28 @@
+th {
+	//width: 20%;
+	background-color: grey;
+	color: white;
+}
+
+tr {
+	border: 1px solid black;
+}
+.colAction {
+	width: 200px;
+}
+.table {
+	margin-top:20px;
+}
+.table-striped>tbody>tr:nth-of-type(even) {
+    background-color: #f9f9f9;;
+}
+.list-order-title {
+	color: white;
+	font-weight: bold;
+	clear: both;
+	margin-top: 60px;
+}
+.form-control {
+	float:left;
+	width:40%;
+}
