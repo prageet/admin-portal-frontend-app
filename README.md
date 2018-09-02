@@ -6,6 +6,18 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
+## Application Screenshots
+![Alt text](/screenshots/registeration.JPG?raw=true "Optional Title")
+![Alt text](/screenshots/login.JPG?raw=true "Optional Title")
+![Alt text](/screenshots/add-new-category.JPG?raw=true "Optional Title")
+![Alt text](/screenshots/add-new-dish-to-category.JPG?raw=true "Optional Title")
+![Alt text](/screenshots/dish-list-by-category.JPG?raw=true "Optional Title")
+![Alt text](/screenshots/edit-dish.JPG?raw=true "Optional Title")
+![Alt text](/screenshots/list-orders.JPG?raw=true "Optional Title")
+![Alt text](/screenshots/view-order-details.JPG?raw=true "Optional Title")
+![Alt text](/screenshots/edit-order.JPG?raw=true "Optional Title")
+![Alt text](/screenshots/search-order-by-order-status.JPG?raw=true "Optional Title")
+
 ## Code scaffolding
 
 Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
